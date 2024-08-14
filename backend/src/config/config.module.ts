@@ -11,6 +11,7 @@ import Joi from 'joi';
           .valid('production', 'development', 'test')
           .required(),
         PORT: Joi.number().required(),
+        CONTAINER_PORT: Joi.number().required(),
         JWT_SECRET: Joi.string().required(),
         JWT_EXPIRES_IN: Joi.string().required(),
       }),
